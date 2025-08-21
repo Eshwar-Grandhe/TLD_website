@@ -56,10 +56,10 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
-                  to="/cloud-solutions"
+                  to="/cloud-transformation"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Cloud Solutions
+                  Cloud Transformation
                 </Link>
               </li>
               <li>
