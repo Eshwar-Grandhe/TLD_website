@@ -23,7 +23,8 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="py-20 md:py-28 lg:py-32 max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-              Empowering Business Transformation through People, Process & Technology
+              Empowering Business Transformation through <br />
+              People, Process & Technology
             </h1>
             <p className="mt-6 text-xl text-gray-100">
               Expert IT solutions from a team of ex-AWS professionals dedicated to solving your
@@ -86,7 +87,7 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
                 <i className="fas fa-cloud text-2xl text-purple-600"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Cloud Solutions</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Cloud Transformation</h3>
               <p className="text-gray-600 mb-6">
                 Leverage the power of cloud computing with our expertise in different cloud
                 providers and best practices.
@@ -195,9 +196,7 @@ const Home: React.FC = () => {
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                  Success Story: Global E-commerce Platform
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Success Story</h2>
                 <p className="text-xl text-blue-100 mb-6">
                   We helped a leading e-commerce company scale their infrastructure to handle 10x
                   traffic growth while reducing costs by 40%.
@@ -221,7 +220,7 @@ const Home: React.FC = () => {
                   "TLD Systems transformed our infrastructure and helped us achieve unprecedented
                   scale."
                 </p>
-                <p className="text-white font-semibold mt-2">- CTO, Global E-commerce Co.</p>
+                <p className="text-white font-semibold mt-2">- Client.</p>
               </div>
             </div>
           </div>

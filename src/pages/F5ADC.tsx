@@ -46,31 +46,6 @@ const F5ADC: React.FC = () => {
         </div>
       </div>
 
-      {/* F5 ADC Overview */}
-      <div className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">F5 BIG-IP Expertise</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                As certified F5 professionals, we provide comprehensive BIG-IP Application Delivery
-                Controller solutions that optimize application performance, enhance security, and
-                ensure high availability.
-              </p>
-              <p className="text-lg text-gray-600 mb-6">
-                Our team has extensive experience with F5 BIG-IP Local Traffic Manager (LTM), Global
-                Traffic Manager (GTM), Application Security Manager (ASM), and Advanced WAF
-                solutions.
-              </p>
-              <p className="text-lg text-gray-600">
-                We help organizations maximize their F5 investment through expert design,
-                implementation, and ongoing management services.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* F5 Services */}
       <div className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -52,16 +52,6 @@ const Navigation: React.FC = () => {
               >
                 Contact
               </Link>
-              <Link
-                to="/cloud-transformation"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive('/cloud-services')
-                    ? 'text-blue-800 border-b-2 border-blue-800'
-                    : 'text-gray-700 hover:text-blue-800'
-                }`}
-              >
-                Cloud Transformation
-              </Link>
             </div>
           </div>
 
