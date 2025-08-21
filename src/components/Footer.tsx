@@ -17,20 +17,18 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/tldsystems/"
                 className="text-gray-400 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="fab fa-linkedin text-xl"></i>
               </a>
               <a
-                href="#"
+                href="https://github.com/tldsys"
                 className="text-gray-400 hover:text-white transition-colors"
-              >
-                <i className="fab fa-twitter text-xl"></i>
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="fab fa-github text-xl"></i>
               </a>
@@ -57,20 +55,28 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/cloud-solutions"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Cloud Solutions
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/cybersecurity"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Consulting
-                </a>
+                  Cyber Security
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/staff-augmentation"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Staff Augmentation
+                </Link>
               </li>
             </ul>
           </div>
@@ -86,30 +92,6 @@ const Footer: React.FC = () => {
                   About Us
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/careers"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Press
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -118,15 +100,15 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li className="text-gray-300">
                 <i className="fas fa-envelope mr-2"></i>
-                info@tldsystems.com
+                dkesav@tldsys.com
               </li>
               <li className="text-gray-300">
                 <i className="fas fa-phone mr-2"></i>
-                +1 (555) 123-4567
+                +1 (626) 607-4857
               </li>
               <li className="text-gray-300">
                 <i className="fas fa-map-marker-alt mr-2"></i>
-                San Francisco, CA
+                Frisco, TX
               </li>
             </ul>
           </div>
@@ -134,7 +116,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 TLD Systems. All rights reserved.
+            © 2025 TLD Systems. All rights reserved.
           </p>
         </div>
       </div>

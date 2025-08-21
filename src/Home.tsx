@@ -2,8 +2,10 @@
 import React from "react";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div id="top" className="font-sans min-h-screen bg-gray-50">
       <Navigation />
@@ -28,14 +30,6 @@ const Home: React.FC = () => {
               Expert IT solutions from a team of ex-AWS professionals dedicated
               to solving your real-world business challenges.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <button className="!rounded-button whitespace-nowrap cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300 shadow-lg">
-                Get in Touch
-              </button>
-              <button className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300">
-                Explore Services
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -104,12 +98,52 @@ const Home: React.FC = () => {
                 Cloud Solutions
               </h3>
               <p className="text-gray-600 mb-6">
-                Leverage the power of cloud computing with our AWS expertise and
+                Leverage the power of cloud computing with our expertise in different cloud providers and
                 best practices.
               </p>
               <a
-                href="#"
+                href="/cloud-transformation"
                 className="text-purple-600 hover:text-purple-800 font-medium inline-flex items-center"
+              >
+                Learn More
+                <i className="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+
+            {/* CyberSecurity */}
+            <div className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
+              <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                <i className="fas fa-lock text-2xl text-red-600"></i>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                CyberSecurity
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Protect your digital assets with our comprehensive cybersecurity solutions.
+              </p>
+              <a
+                href="/cybersecurity"
+                className="text-red-600 hover:text-red-800 font-medium inline-flex items-center"
+              >
+                Learn More
+                <i className="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+
+            {/* Staff Augmentation */}
+            <div className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
+              <div className="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+                <i className="fas fa-user-friends text-2xl text-yellow-600"></i>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Staff Augmentation
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Scale your team with our skilled professionals for your projects.
+              </p>
+              <a
+                href="/staff-augmentation"
+                className="text-yellow-600 hover:text-yellow-800 font-medium inline-flex items-center"
               >
                 Learn More
                 <i className="fas fa-arrow-right ml-2"></i>
@@ -237,10 +271,7 @@ const Home: React.FC = () => {
             goals and drive business growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="!rounded-button whitespace-nowrap cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300">
-              Get Started Today
-            </button>
-            <button className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300">
+            <button className="!rounded-button whitespace-nowrap cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300" onClick={() => navigate("/contact")}>
               Schedule a Consultation
             </button>
           </div>

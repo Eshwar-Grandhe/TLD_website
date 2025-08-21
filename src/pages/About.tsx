@@ -46,13 +46,6 @@ const About: React.FC = () => {
                 We believe that technology should empower businesses, not complicate them. That's why we focus on delivering practical, scalable solutions that drive real business value.
               </p>
             </div>
-            <div>
-              <img
-                src="https://readdy.ai/api/search-image?query=Modern%20office%20space%20with%20team%20collaboration%20area%2C%20professional%20workplace%20with%20technology%20equipment%2C%20business%20meeting%20room%20with%20presentation%20screen%2C%20corporate%20environment%20with%20blue%20accent%20colors&width=600&height=400&seq=about-story&orientation=landscape"
-                alt="Our Story"
-                className="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -96,65 +89,6 @@ const About: React.FC = () => {
               <p className="text-gray-600">
                 Excellence, integrity, innovation, collaboration, and unwavering commitment to client success.
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Leadership Team */}
-      <div className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Leadership Team</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Meet the experienced professionals who drive our company's success and innovation.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
-              <img
-                src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20senior%20IT%20executive%20in%20business%20attire%2C%20confident%20portrait%20with%20blue%20background%2C%20corporate%20leader%20with%20friendly%20expression&width=400&height=300&seq=leader1&orientation=portrait"
-                alt="CEO"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">John Smith</h3>
-                <p className="text-blue-600 font-medium mb-3">Chief Executive Officer</p>
-                <p className="text-gray-600 text-sm">
-                  Former AWS Solutions Architect with 15+ years of experience in cloud infrastructure and enterprise solutions.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
-              <img
-                src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20female%20technology%20leader%2C%20business%20executive%20portrait%2C%20confident%20woman%20in%20corporate%20attire%20with%20blue%20background&width=400&height=300&seq=leader2&orientation=portrait"
-                alt="CTO"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Sarah Johnson</h3>
-                <p className="text-blue-600 font-medium mb-3">Chief Technology Officer</p>
-                <p className="text-gray-600 text-sm">
-                  Ex-AWS Senior Technical Manager specializing in application delivery and cybersecurity solutions.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
-              <img
-                src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20senior%20business%20executive%2C%20male%20leader%20in%20corporate%20attire%2C%20confident%20portrait%20with%20blue%20background&width=400&height=300&seq=leader3&orientation=portrait"
-                alt="COO"
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Michael Chen</h3>
-                <p className="text-blue-600 font-medium mb-3">Chief Operations Officer</p>
-                <p className="text-gray-600 text-sm">
-                  Former AWS Operations Manager with expertise in infrastructure management and team leadership.
-                </p>
-              </div>
             </div>
           </div>
         </div>

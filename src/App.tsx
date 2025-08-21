@@ -7,9 +7,13 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Home from "./Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Careers from "./pages/Careers";
 import Infrastructure from "./pages/Infrastructure";
 import F5ADC from "./pages/F5ADC";
+import CloudTransformation from "./pages/CloudTransformation";
+import StaffAugmentation from "./pages/StaffAugmentation";
+import CyberSecurity from "./pages/CyberSecurity";
+{/* We are not implementing careers page now */}
+// import Careers from "./pages/Careers";
 
 const App: React.FC = () => {
   return (
@@ -19,7 +23,11 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/careers" element={<Careers />} />
+          {/* We are not implementing careers page now */}
+          {/* <Route path="/careers" element={<Careers />} /> */}
+          <Route path="/cloud-transformation" element={<CloudTransformation />} />
+          <Route path="/cybersecurity" element={<CyberSecurity />} />
+          <Route path="/staff-augmentation" element={<StaffAugmentation />} />
           <Route path="/infrastructure" element={<Infrastructure />} />
           <Route path="/f5-adc" element={<F5ADC />} />
         </Routes>

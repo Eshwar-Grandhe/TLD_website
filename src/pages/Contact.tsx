@@ -12,13 +12,28 @@ const Contact: React.FC = () => {
     message: "",
   });
 
+  React.useLayoutEffect(() => {
+  window.scrollTo(0, 0);
+}, [])
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
     console.log("Form submitted:", formData);
+    setFormData({
+    name: "",
+    email: "",
+    company: "",
+    phone: "",
+    subject: "",
+    message: "",
+  })
+
+    return;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    console.log("Field changed:", e.target.name, e.target.value);
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -136,14 +151,13 @@ const Contact: React.FC = () => {
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option value="">Select a subject</option>
+                    <option value="" disabled>Select a subject</option>
                     <option value="infrastructure">Infrastructure Management</option>
                     <option value="f5-adc">F5 ADC Solutions</option>
                     <option value="cloud">Cloud Solutions</option>
-                    <option value="cybersecurity">Cybersecurity</option>
+                    <option value="cybersecurity">Cyber Security</option>
                     <option value="staff-augmentation">Staff Augmentation</option>
-                    <option value="training">Tech Training</option>
-                    <option value="general">General Inquiry</option>
+                    <option value="general-enquiry">General Enquiry</option>
                   </select>
                 </div>
 
@@ -184,8 +198,8 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">Office Location</h3>
                     <p className="text-gray-600">
-                      123 Tech Avenue, Suite 500<br />
-                      Seattle, WA 98101<br />
+                      555 Lone Falcon Ln<br />
+                      Frisco, TX 75036<br />
                       United States
                     </p>
                   </div>
@@ -198,8 +212,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">Phone</h3>
                     <p className="text-gray-600">
-                      Main: (800) 555-1234<br />
-                      Support: (800) 555-5678
+                      (626) 607-4857
                     </p>
                   </div>
                 </div>
@@ -211,9 +224,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">Email</h3>
                     <p className="text-gray-600">
-                      General: info@tldsystems.com<br />
-                      Sales: sales@tldsystems.com<br />
-                      Support: support@tldsystems.com
+                      dkesav@tldsystems.com<br />
                     </p>
                   </div>
                 </div>
@@ -225,53 +236,12 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">Business Hours</h3>
                     <p className="text-gray-600">
-                      Monday - Friday: 8:00 AM - 6:00 PM PST<br />
-                      Saturday: 9:00 AM - 2:00 PM PST<br />
+                      Monday - Friday: 8:00 AM - 6:00 PM CST<br />
+                      Saturday: 9:00 AM - 2:00 PM CST<br />
                       Sunday: Closed
                     </p>
                   </div>
                 </div>
-              </div>
-
-              {/* Social Media */}
-              <div className="mt-12">
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">Follow Us</h3>
-                <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-300">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition-colors duration-300">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center text-white hover:bg-blue-900 transition-colors duration-300">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors duration-300">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Map Section */}
-      <div className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Find Us</h2>
-            <p className="text-xl text-gray-600">
-              Visit our office or reach out to us online
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="h-96 bg-gray-200 flex items-center justify-center">
-              <div className="text-center">
-                <i className="fas fa-map-marked-alt text-6xl text-gray-400 mb-4"></i>
-                <p className="text-gray-600">Interactive Map Coming Soon</p>
-                <p className="text-sm text-gray-500 mt-2">123 Tech Avenue, Suite 500, Seattle, WA 98101</p>
               </div>
             </div>
           </div>

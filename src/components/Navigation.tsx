@@ -33,26 +33,6 @@ const Navigation: React.FC = () => {
                 Home
               </Link>
               <Link
-                to="/infrastructure"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/infrastructure")
-                    ? "text-blue-800 border-b-2 border-blue-800"
-                    : "text-gray-700 hover:text-blue-800"
-                }`}
-              >
-                Infrastructure
-              </Link>
-              <Link
-                to="/f5-adc"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/f5-adc")
-                    ? "text-blue-800 border-b-2 border-blue-800"
-                    : "text-gray-700 hover:text-blue-800"
-                }`}
-              >
-                F5 ADC
-              </Link>
-              <Link
                 to="/about"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive("/about")
@@ -73,14 +53,14 @@ const Navigation: React.FC = () => {
                 Contact
               </Link>
               <Link
-                to="/careers"
+                to="/cloud-transformation"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/careers")
+                  isActive("/cloud-services")
                     ? "text-blue-800 border-b-2 border-blue-800"
                     : "text-gray-700 hover:text-blue-800"
                 }`}
               >
-                Careers
+                Cloud Transformation
               </Link>
             </div>
           </div>
@@ -125,28 +105,6 @@ const Navigation: React.FC = () => {
               Home
             </Link>
             <Link
-              to="/infrastructure"
-              className={`block px-3 py-2 text-base font-medium transition-colors ${
-                isActive("/infrastructure")
-                  ? "text-blue-800 bg-blue-50"
-                  : "text-gray-700 hover:text-blue-800"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Infrastructure
-            </Link>
-            <Link
-              to="/f5-adc"
-              className={`block px-3 py-2 text-base font-medium transition-colors ${
-                isActive("/f5-adc")
-                  ? "text-blue-800 bg-blue-50"
-                  : "text-gray-700 hover:text-blue-800"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              F5 ADC
-            </Link>
-            <Link
               to="/about"
               className={`block px-3 py-2 text-base font-medium transition-colors ${
                 isActive("/about")
@@ -168,17 +126,7 @@ const Navigation: React.FC = () => {
             >
               Contact
             </Link>
-            <Link
-              to="/careers"
-              className={`block px-3 py-2 text-base font-medium transition-colors ${
-                isActive("/careers")
-                  ? "text-blue-800 bg-blue-50"
-                  : "text-gray-700 hover:text-blue-800"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Careers
-            </Link>
+            <br/>
             <Link
               to="/contact"
               className="!rounded-button whitespace-nowrap cursor-pointer mt-3 w-full bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 text-base font-medium"

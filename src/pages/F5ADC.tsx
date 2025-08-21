@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 const F5ADC: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div id="top" className="font-sans min-h-screen bg-gray-50">
       <Navigation />
@@ -27,11 +29,8 @@ const F5ADC: React.FC = () => {
               Specialized Application Delivery Controller solutions with expert implementation, optimization, and management services.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <button className="!rounded-button whitespace-nowrap cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300 shadow-lg">
+              <button className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300" onClick={() => navigate("/contact")}>
                 Get Expert Consultation
-              </button>
-              <button className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300">
-                View Solutions
               </button>
             </div>
           </div>
@@ -53,13 +52,6 @@ const F5ADC: React.FC = () => {
               <p className="text-lg text-gray-600">
                 We help organizations maximize their F5 investment through expert design, implementation, and ongoing management services.
               </p>
-            </div>
-            <div>
-              <img
-                src="https://readdy.ai/api/search-image?query=F5%20BIG-IP%20network%20diagram%20showing%20load%20balancing%20and%20application%20delivery%20architecture%2C%20enterprise%20network%20infrastructure%20design%2C%20blue%20and%20gray%20technology%20visualization&width=600&height=400&seq=f5-overview&orientation=landscape"
-                alt="F5 BIG-IP Architecture"
-                className="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
             </div>
           </div>
         </div>
@@ -316,18 +308,6 @@ const F5ADC: React.FC = () => {
                   <div className="text-blue-200">Implementation Time</div>
                 </div>
               </div>
-
-              <button className="bg-white text-blue-800 hover:bg-blue-50 px-6 py-3 text-base font-medium transition-colors duration-300 rounded-md">
-                Read Full Case Study
-              </button>
-            </div>
-
-            <div>
-              <img
-                src="https://readdy.ai/api/search-image?query=E-commerce%20website%20with%20shopping%20cart%20and%20product%20catalog%2C%20online%20retail%20platform%20with%20secure%20payment%20processing%2C%20digital%20commerce%20environment%20with%20blue%20accent%20colors&width=600&height=400&seq=f5-case&orientation=landscape"
-                alt="E-commerce Platform"
-                className="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
             </div>
           </div>
         </div>
@@ -388,11 +368,8 @@ const F5ADC: React.FC = () => {
               Let our F5 experts help you maximize the performance, security, and availability of your applications.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300 rounded-md">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300 rounded-md" onClick={() => navigate("/contact")}>
                 Schedule F5 Consultation
-              </button>
-              <button className="bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300 rounded-md">
-                Download F5 Solutions Guide
               </button>
             </div>
           </div>
