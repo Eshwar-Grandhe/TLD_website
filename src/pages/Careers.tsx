@@ -1,71 +1,75 @@
-import React, { useState } from "react";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import React, { useState } from 'react';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const Careers: React.FC = () => {
   const [selectedJob, setSelectedJob] = useState<string | null>(null);
 
   const jobListings = [
     {
-      id: "senior-architect",
-      title: "Senior Solutions Architect",
-      department: "Engineering",
-      location: "Seattle, WA",
-      type: "Full-time",
-      experience: "5+ years",
-      description: "Lead the design and implementation of enterprise-level infrastructure solutions for our clients.",
+      id: 'senior-architect',
+      title: 'Senior Solutions Architect',
+      department: 'Engineering',
+      location: 'Seattle, WA',
+      type: 'Full-time',
+      experience: '5+ years',
+      description:
+        'Lead the design and implementation of enterprise-level infrastructure solutions for our clients.',
       requirements: [
-        "AWS Solutions Architect certification",
-        "Experience with F5 BIG-IP",
-        "Strong knowledge of networking and security",
-        "Excellent communication skills"
-      ]
+        'AWS Solutions Architect certification',
+        'Experience with F5 BIG-IP',
+        'Strong knowledge of networking and security',
+        'Excellent communication skills',
+      ],
     },
     {
-      id: "devops-engineer",
-      title: "DevOps Engineer",
-      department: "Engineering",
-      location: "Remote",
-      type: "Full-time",
-      experience: "3+ years",
-      description: "Build and maintain CI/CD pipelines, infrastructure as code, and automation solutions.",
+      id: 'devops-engineer',
+      title: 'DevOps Engineer',
+      department: 'Engineering',
+      location: 'Remote',
+      type: 'Full-time',
+      experience: '3+ years',
+      description:
+        'Build and maintain CI/CD pipelines, infrastructure as code, and automation solutions.',
       requirements: [
-        "Experience with Docker and Kubernetes",
-        "Proficiency in Python, Bash, or PowerShell",
-        "Knowledge of cloud platforms (AWS, Azure, GCP)",
-        "Experience with monitoring and logging tools"
-      ]
+        'Experience with Docker and Kubernetes',
+        'Proficiency in Python, Bash, or PowerShell',
+        'Knowledge of cloud platforms (AWS, Azure, GCP)',
+        'Experience with monitoring and logging tools',
+      ],
     },
     {
-      id: "security-analyst",
-      title: "Cybersecurity Analyst",
-      department: "Security",
-      location: "Seattle, WA",
-      type: "Full-time",
-      experience: "2+ years",
-      description: "Protect our clients' digital assets through threat detection, analysis, and response.",
+      id: 'security-analyst',
+      title: 'Cybersecurity Analyst',
+      department: 'Security',
+      location: 'Seattle, WA',
+      type: 'Full-time',
+      experience: '2+ years',
+      description:
+        "Protect our clients' digital assets through threat detection, analysis, and response.",
       requirements: [
-        "Security certifications (CISSP, CEH, or similar)",
-        "Experience with SIEM tools",
-        "Knowledge of threat hunting and incident response",
-        "Understanding of compliance frameworks"
-      ]
+        'Security certifications (CISSP, CEH, or similar)',
+        'Experience with SIEM tools',
+        'Knowledge of threat hunting and incident response',
+        'Understanding of compliance frameworks',
+      ],
     },
     {
-      id: "training-instructor",
-      title: "Technical Training Instructor",
-      department: "Education",
-      location: "Seattle, WA",
-      type: "Full-time",
-      experience: "3+ years",
-      description: "Develop and deliver technical training programs for students and professionals.",
+      id: 'training-instructor',
+      title: 'Technical Training Instructor',
+      department: 'Education',
+      location: 'Seattle, WA',
+      type: 'Full-time',
+      experience: '3+ years',
+      description:
+        'Develop and deliver technical training programs for students and professionals.',
       requirements: [
-        "Experience in technical training or education",
-        "Strong presentation and communication skills",
-        "Knowledge of IT infrastructure and cloud technologies",
-        "Patience and passion for teaching"
-      ]
-    }
+        'Experience in technical training or education',
+        'Strong presentation and communication skills',
+        'Knowledge of IT infrastructure and cloud technologies',
+        'Patience and passion for teaching',
+      ],
+    },
   ];
 
   return (
@@ -89,7 +93,8 @@ const Careers: React.FC = () => {
               Join Our Team
             </h1>
             <p className="mt-6 text-xl text-gray-100">
-              Build your career with a team of passionate IT professionals dedicated to transforming businesses through innovative technology solutions.
+              Build your career with a team of passionate IT professionals dedicated to transforming
+              businesses through innovative technology solutions.
             </p>
             <div className="mt-10">
               <button className="!rounded-button whitespace-nowrap cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300 shadow-lg">
@@ -106,7 +111,8 @@ const Careers: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Why Work With Us</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're not just a company - we're a team of innovators, problem-solvers, and technology enthusiasts.
+              We're not just a company - we're a team of innovators, problem-solvers, and technology
+              enthusiasts.
             </p>
           </div>
 
@@ -117,7 +123,8 @@ const Careers: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Growth Opportunities</h3>
               <p className="text-gray-600">
-                Continuous learning and career advancement through training, certifications, and mentorship programs.
+                Continuous learning and career advancement through training, certifications, and
+                mentorship programs.
               </p>
             </div>
 
@@ -127,7 +134,8 @@ const Careers: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Collaborative Culture</h3>
               <p className="text-gray-600">
-                Work with experienced professionals in a supportive environment that values teamwork and innovation.
+                Work with experienced professionals in a supportive environment that values teamwork
+                and innovation.
               </p>
             </div>
 
@@ -137,7 +145,8 @@ const Careers: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Global Impact</h3>
               <p className="text-gray-600">
-                Make a difference by helping businesses transform their technology infrastructure and operations.
+                Make a difference by helping businesses transform their technology infrastructure
+                and operations.
               </p>
             </div>
 
@@ -147,7 +156,8 @@ const Careers: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Work-Life Balance</h3>
               <p className="text-gray-600">
-                Flexible work arrangements, competitive benefits, and a culture that respects personal time.
+                Flexible work arrangements, competitive benefits, and a culture that respects
+                personal time.
               </p>
             </div>
           </div>
@@ -160,7 +170,8 @@ const Careers: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Benefits & Perks</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We take care of our team with comprehensive benefits and perks that support your health, growth, and well-being.
+              We take care of our team with comprehensive benefits and perks that support your
+              health, growth, and well-being.
             </p>
           </div>
 
@@ -264,8 +275,8 @@ const Careers: React.FC = () => {
                   key={job.id}
                   className={`p-6 border rounded-lg cursor-pointer transition-all duration-300 ${
                     selectedJob === job.id
-                      ? "border-blue-500 bg-blue-50"
-                      : "border-gray-200 hover:border-blue-300 hover:bg-gray-50"
+                      ? 'border-blue-500 bg-blue-50'
+                      : 'border-gray-200 hover:border-blue-300 hover:bg-gray-50'
                   }`}
                   onClick={() => setSelectedJob(job.id)}
                 >
@@ -297,9 +308,9 @@ const Careers: React.FC = () => {
               {selectedJob ? (
                 <div>
                   {(() => {
-                    const job = jobListings.find(j => j.id === selectedJob);
+                    const job = jobListings.find((j) => j.id === selectedJob);
                     if (!job) return null;
-                    
+
                     return (
                       <>
                         <h3 className="text-2xl font-bold text-gray-800 mb-4">{job.title}</h3>
@@ -317,9 +328,11 @@ const Careers: React.FC = () => {
                             {job.type}
                           </span>
                         </div>
-                        
+
                         <div className="mb-6">
-                          <h4 className="text-lg font-semibold text-gray-800 mb-3">Job Description</h4>
+                          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+                            Job Description
+                          </h4>
                           <p className="text-gray-600">{job.description}</p>
                         </div>
 

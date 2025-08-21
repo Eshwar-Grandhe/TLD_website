@@ -1,6 +1,6 @@
 // src/components/Footer.tsx
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -12,8 +12,7 @@ const Footer: React.FC = () => {
               TLD<span className="text-gray-400">Systems</span>
             </h3>
             <p className="text-gray-300 mb-4">
-              Empowering business transformation through innovative technology
-              solutions.
+              Empowering business transformation through innovative technology solutions.
             </p>
             <div className="flex space-x-4">
               <a
@@ -47,10 +46,7 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/f5-adc"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
+                <Link to="/f5-adc" className="text-gray-300 hover:text-white transition-colors">
                   F5 ADC
                 </Link>
               </li>
@@ -85,10 +81,7 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <Link
-                  to="/about"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
+                <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>
@@ -115,9 +108,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-400">
-            © 2025 TLD Systems. All rights reserved.
-          </p>
+          <p className="text-gray-400">© 2025 TLD Systems. All rights reserved.</p>
         </div>
       </div>
     </footer>

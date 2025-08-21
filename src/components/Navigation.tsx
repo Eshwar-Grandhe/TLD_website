@@ -1,6 +1,6 @@
 // src/components/Navigation.tsx
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,9 +25,9 @@ const Navigation: React.FC = () => {
               <Link
                 to="/"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/")
-                    ? "text-blue-800 border-b-2 border-blue-800"
-                    : "text-gray-700 hover:text-blue-800"
+                  isActive('/')
+                    ? 'text-blue-800 border-b-2 border-blue-800'
+                    : 'text-gray-700 hover:text-blue-800'
                 }`}
               >
                 Home
@@ -35,9 +35,9 @@ const Navigation: React.FC = () => {
               <Link
                 to="/about"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/about")
-                    ? "text-blue-800 border-b-2 border-blue-800"
-                    : "text-gray-700 hover:text-blue-800"
+                  isActive('/about')
+                    ? 'text-blue-800 border-b-2 border-blue-800'
+                    : 'text-gray-700 hover:text-blue-800'
                 }`}
               >
                 About
@@ -45,9 +45,9 @@ const Navigation: React.FC = () => {
               <Link
                 to="/contact"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/contact")
-                    ? "text-blue-800 border-b-2 border-blue-800"
-                    : "text-gray-700 hover:text-blue-800"
+                  isActive('/contact')
+                    ? 'text-blue-800 border-b-2 border-blue-800'
+                    : 'text-gray-700 hover:text-blue-800'
                 }`}
               >
                 Contact
@@ -55,9 +55,9 @@ const Navigation: React.FC = () => {
               <Link
                 to="/cloud-transformation"
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isActive("/cloud-services")
-                    ? "text-blue-800 border-b-2 border-blue-800"
-                    : "text-gray-700 hover:text-blue-800"
+                  isActive('/cloud-services')
+                    ? 'text-blue-800 border-b-2 border-blue-800'
+                    : 'text-gray-700 hover:text-blue-800'
                 }`}
               >
                 Cloud Transformation
@@ -81,9 +81,7 @@ const Navigation: React.FC = () => {
               aria-label="Toggle menu"
               type="button"
             >
-              <i
-                className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"} text-xl`}
-              ></i>
+              <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
             </button>
           </div>
         </div>
@@ -96,9 +94,7 @@ const Navigation: React.FC = () => {
             <Link
               to="/"
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                isActive("/")
-                  ? "text-blue-800 bg-blue-50"
-                  : "text-gray-700 hover:text-blue-800"
+                isActive('/') ? 'text-blue-800 bg-blue-50' : 'text-gray-700 hover:text-blue-800'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -107,9 +103,9 @@ const Navigation: React.FC = () => {
             <Link
               to="/about"
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                isActive("/about")
-                  ? "text-blue-800 bg-blue-50"
-                  : "text-gray-700 hover:text-blue-800"
+                isActive('/about')
+                  ? 'text-blue-800 bg-blue-50'
+                  : 'text-gray-700 hover:text-blue-800'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -118,15 +114,15 @@ const Navigation: React.FC = () => {
             <Link
               to="/contact"
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                isActive("/contact")
-                  ? "text-blue-800 bg-blue-50"
-                  : "text-gray-700 hover:text-blue-800"
+                isActive('/contact')
+                  ? 'text-blue-800 bg-blue-50'
+                  : 'text-gray-700 hover:text-blue-800'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
             </Link>
-            <br/>
+            <br />
             <Link
               to="/contact"
               className="!rounded-button whitespace-nowrap cursor-pointer mt-3 w-full bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 text-base font-medium"

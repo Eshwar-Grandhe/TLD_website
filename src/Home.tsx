@@ -1,8 +1,8 @@
 // src/Home.tsx
-import React from "react";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import { useNavigate, Link } from "react-router-dom";
+import React from 'react';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -23,12 +23,11 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="py-20 md:py-28 lg:py-32 max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-              Empowering Business Transformation through People, Process &
-              Technology
+              Empowering Business Transformation through People, Process & Technology
             </h1>
             <p className="mt-6 text-xl text-gray-100">
-              Expert IT solutions from a team of ex-AWS professionals dedicated
-              to solving your real-world business challenges.
+              Expert IT solutions from a team of ex-AWS professionals dedicated to solving your
+              real-world business challenges.
             </p>
           </div>
         </div>
@@ -38,9 +37,7 @@ const Home: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Services
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive IT solutions tailored to your business needs
             </p>
@@ -52,12 +49,10 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                 <i className="fas fa-server text-2xl text-blue-600"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Infrastructure
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Infrastructure</h3>
               <p className="text-gray-600 mb-6">
-                Build robust, scalable infrastructure solutions with our expert
-                guidance and implementation.
+                Build robust, scalable infrastructure solutions with our expert guidance and
+                implementation.
               </p>
               <Link
                 to="/infrastructure"
@@ -73,12 +68,9 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
                 <i className="fas fa-shield-alt text-2xl text-green-600"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                F5 ADC
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">F5 ADC</h3>
               <p className="text-gray-600 mb-6">
-                Optimize application delivery and security with F5 BIG-IP
-                solutions.
+                Optimize application delivery and security with F5 BIG-IP solutions.
               </p>
               <Link
                 to="/f5-adc"
@@ -94,12 +86,10 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
                 <i className="fas fa-cloud text-2xl text-purple-600"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Cloud Solutions
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Cloud Solutions</h3>
               <p className="text-gray-600 mb-6">
-                Leverage the power of cloud computing with our expertise in different cloud providers and
-                best practices.
+                Leverage the power of cloud computing with our expertise in different cloud
+                providers and best practices.
               </p>
               <Link
                 to="/cloud-transformation"
@@ -115,9 +105,7 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
                 <i className="fas fa-lock text-2xl text-red-600"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                CyberSecurity
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">CyberSecurity</h3>
               <p className="text-gray-600 mb-6">
                 Protect your digital assets with our comprehensive cybersecurity solutions.
               </p>
@@ -135,9 +123,7 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
                 <i className="fas fa-user-friends text-2xl text-yellow-600"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Staff Augmentation
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Staff Augmentation</h3>
               <p className="text-gray-600 mb-6">
                 Scale your team with our skilled professionals for your projects.
               </p>
@@ -161,8 +147,7 @@ const Home: React.FC = () => {
               Why Choose TLD Systems?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our team brings together decades of experience from leading
-              technology companies
+              Our team brings together decades of experience from leading technology companies
             </p>
           </div>
 
@@ -171,21 +156,15 @@ const Home: React.FC = () => {
               <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-users text-2xl text-blue-600"></i>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Expert Team
-              </h3>
-              <p className="text-gray-600">
-                Former AWS professionals with deep industry knowledge
-              </p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Expert Team</h3>
+              <p className="text-gray-600">Former AWS professionals with deep industry knowledge</p>
             </div>
 
             <div className="text-center">
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-cogs text-2xl text-green-600"></i>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Proven Process
-              </h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Proven Process</h3>
               <p className="text-gray-600">
                 Time-tested methodologies for successful implementations
               </p>
@@ -195,24 +174,16 @@ const Home: React.FC = () => {
               <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-rocket text-2xl text-purple-600"></i>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Rapid Delivery
-              </h3>
-              <p className="text-gray-600">
-                Quick turnaround times without compromising quality
-              </p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Rapid Delivery</h3>
+              <p className="text-gray-600">Quick turnaround times without compromising quality</p>
             </div>
 
             <div className="text-center">
               <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-headset text-2xl text-orange-600"></i>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                24/7 Support
-              </h3>
-              <p className="text-gray-600">
-                Round-the-clock support for your critical systems
-              </p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">24/7 Support</h3>
+              <p className="text-gray-600">Round-the-clock support for your critical systems</p>
             </div>
           </div>
         </div>
@@ -228,9 +199,8 @@ const Home: React.FC = () => {
                   Success Story: Global E-commerce Platform
                 </h2>
                 <p className="text-xl text-blue-100 mb-6">
-                  We helped a leading e-commerce company scale their
-                  infrastructure to handle 10x traffic growth while reducing
-                  costs by 40%.
+                  We helped a leading e-commerce company scale their infrastructure to handle 10x
+                  traffic growth while reducing costs by 40%.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
@@ -248,12 +218,10 @@ const Home: React.FC = () => {
                   <i className="fas fa-chart-line text-4xl text-white"></i>
                 </div>
                 <p className="text-blue-100">
-                  "TLD Systems transformed our infrastructure and helped us
-                  achieve unprecedented scale."
+                  "TLD Systems transformed our infrastructure and helped us achieve unprecedented
+                  scale."
                 </p>
-                <p className="text-white font-semibold mt-2">
-                  - CTO, Global E-commerce Co.
-                </p>
+                <p className="text-white font-semibold mt-2">- CTO, Global E-commerce Co.</p>
               </div>
             </div>
           </div>
@@ -267,11 +235,14 @@ const Home: React.FC = () => {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Let's discuss how our expertise can help you achieve your technology
-            goals and drive business growth.
+            Let's discuss how our expertise can help you achieve your technology goals and drive
+            business growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="!rounded-button whitespace-nowrap cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300" onClick={() => navigate("/contact")}>
+            <button
+              className="!rounded-button whitespace-nowrap cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300"
+              onClick={() => navigate('/contact')}
+            >
               Schedule a Consultation
             </button>
           </div>

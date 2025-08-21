@@ -1,9 +1,8 @@
-import React from "react";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import React from 'react';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const About: React.FC = () => {
-
   React.useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -29,7 +28,8 @@ const About: React.FC = () => {
               About TLD Systems
             </h1>
             <p className="mt-6 text-xl text-gray-100">
-              We are a team of passionate IT professionals dedicated to transforming businesses through innovative technology solutions.
+              We are a team of passionate IT professionals dedicated to transforming businesses
+              through innovative technology solutions.
             </p>
           </div>
         </div>
@@ -42,13 +42,19 @@ const About: React.FC = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Founded by a team of ex-AWS professionals, TLD Systems was born from a vision to bridge the gap between enterprise-level technology expertise and personalized business solutions.
+                Founded by a team of ex-AWS professionals, TLD Systems was born from a vision to
+                bridge the gap between enterprise-level technology expertise and personalized
+                business solutions.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                With over 15 years of combined experience in cloud infrastructure, application delivery, and cybersecurity, our team understands the real-world challenges that businesses face in today's digital landscape.
+                With over 15 years of combined experience in cloud infrastructure, application
+                delivery, and cybersecurity, our team understands the real-world challenges that
+                businesses face in today's digital landscape.
               </p>
               <p className="text-lg text-gray-600">
-                We believe that technology should empower businesses, not complicate them. That's why we focus on delivering practical, scalable solutions that drive real business value.
+                We believe that technology should empower businesses, not complicate them. That's
+                why we focus on delivering practical, scalable solutions that drive real business
+                value.
               </p>
             </div>
           </div>
@@ -61,7 +67,8 @@ const About: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Mission & Values</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're driven by a commitment to excellence, innovation, and genuine partnership with our clients.
+              We're driven by a commitment to excellence, innovation, and genuine partnership with
+              our clients.
             </p>
           </div>
 
@@ -72,7 +79,8 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Our Mission</h3>
               <p className="text-gray-600">
-                To empower businesses with innovative technology solutions that drive growth, efficiency, and competitive advantage.
+                To empower businesses with innovative technology solutions that drive growth,
+                efficiency, and competitive advantage.
               </p>
             </div>
 
@@ -82,7 +90,8 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Our Vision</h3>
               <p className="text-gray-600">
-                To be the trusted technology partner that businesses turn to for transformative digital solutions.
+                To be the trusted technology partner that businesses turn to for transformative
+                digital solutions.
               </p>
             </div>
 
@@ -92,7 +101,8 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Our Values</h3>
               <p className="text-gray-600">
-                Excellence, integrity, innovation, collaboration, and unwavering commitment to client success.
+                Excellence, integrity, innovation, collaboration, and unwavering commitment to
+                client success.
               </p>
             </div>
           </div>

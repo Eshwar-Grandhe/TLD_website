@@ -1,39 +1,66 @@
-import React, { useState } from "react";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import React, { useState } from 'react';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    subject: "",
-    message: "",
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    subject: '',
+    message: '',
   });
 
   React.useLayoutEffect(() => {
-  window.scrollTo(0, 0);
-}, [])
+    window.scrollTo(0, 0);
+  }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+
+    const form = new FormData();
+    form.append('access_key', 'd106d2e7-658d-4aba-a865-d0315f1c5cdb');
+    form.append('name', formData.name);
+    form.append('email', formData.email);
+    form.append('company', formData.company);
+    form.append('phone', formData.phone);
+    form.append('subject', formData.subject);
+    form.append('message', formData.message);
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: form,
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        alert('Thank you for contacting us! We will get back to you soon.');
+      } else {
+        alert('Oops! Something went wrong. Please try again later.');
+        console.error(data);
+      }
+    } catch (err) {
+      alert('Failed to submit the form. Please try again later.');
+      console.error(err);
+    }
     setFormData({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    subject: "",
-    message: "",
-  })
+      name: '',
+      email: '',
+      company: '',
+      phone: '',
+      subject: '',
+      message: '',
+    });
 
     return;
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    console.log("Field changed:", e.target.name, e.target.value);
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -61,7 +88,8 @@ const Contact: React.FC = () => {
               Get in Touch
             </h1>
             <p className="mt-6 text-xl text-gray-100">
-              Ready to transform your IT infrastructure? Let's discuss how we can help you achieve your technology goals.
+              Ready to transform your IT infrastructure? Let's discuss how we can help you achieve
+              your technology goals.
             </p>
           </div>
         </div>
@@ -76,6 +104,11 @@ const Contact: React.FC = () => {
               <h2 className="text-3xl font-bold text-gray-800 mb-8">Send us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="d106d2e7-658d-4aba-a865-d0315f1c5cdb"
+                  />
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                       Full Name *
@@ -110,7 +143,10 @@ const Contact: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="company"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Company
                     </label>
                     <input
@@ -151,13 +187,15 @@ const Contact: React.FC = () => {
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option value="" disabled>Select a subject</option>
-                    <option value="infrastructure">Infrastructure Management</option>
-                    <option value="f5-adc">F5 ADC Solutions</option>
-                    <option value="cloud">Cloud Solutions</option>
-                    <option value="cybersecurity">Cyber Security</option>
-                    <option value="staff-augmentation">Staff Augmentation</option>
-                    <option value="general-enquiry">General Enquiry</option>
+                    <option value="" disabled>
+                      Select a subject
+                    </option>
+                    <option value="Infrastructure">Infrastructure Management</option>
+                    <option value="F5-ADC">F5 ADC Solutions</option>
+                    <option value="Cloud Transformation">Cloud Transformation</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="Staff Augmentation">Staff Augmentation</option>
+                    <option value="General Enquiry">General Enquiry</option>
                   </select>
                 </div>
 
@@ -189,7 +227,7 @@ const Contact: React.FC = () => {
             {/* Contact Information */}
             <div>
               <h2 className="text-3xl font-bold text-gray-800 mb-8">Contact Information</h2>
-              
+
               <div className="space-y-8">
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
@@ -198,8 +236,10 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">Office Location</h3>
                     <p className="text-gray-600">
-                      555 Lone Falcon Ln<br />
-                      Frisco, TX 75036<br />
+                      555 Lone Falcon Ln
+                      <br />
+                      Frisco, TX 75036
+                      <br />
                       United States
                     </p>
                   </div>
@@ -211,9 +251,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">Phone</h3>
-                    <p className="text-gray-600">
-                      (626) 607-4857
-                    </p>
+                    <p className="text-gray-600">(626) 607-4857</p>
                   </div>
                 </div>
 
@@ -224,7 +262,8 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">Email</h3>
                     <p className="text-gray-600">
-                      dkesav@tldsystems.com<br />
+                      dkesav@tldsystems.com
+                      <br />
                     </p>
                   </div>
                 </div>
@@ -236,8 +275,10 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">Business Hours</h3>
                     <p className="text-gray-600">
-                      Monday - Friday: 8:00 AM - 6:00 PM CST<br />
-                      Saturday: 9:00 AM - 2:00 PM CST<br />
+                      Monday - Friday: 8:00 AM - 6:00 PM CST
+                      <br />
+                      Saturday: 9:00 AM - 2:00 PM CST
+                      <br />
                       Sunday: Closed
                     </p>
                   </div>
@@ -260,30 +301,42 @@ const Contact: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">How quickly can you respond to urgent issues?</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                How quickly can you respond to urgent issues?
+              </h3>
               <p className="text-gray-600">
-                We offer 24/7 support for critical infrastructure issues with response times as fast as 15 minutes for urgent matters.
+                We offer 24/7 support for critical infrastructure issues with response times as fast
+                as 15 minutes for urgent matters.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">Do you provide remote and on-site support?</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                Do you provide remote and on-site support?
+              </h3>
               <p className="text-gray-600">
-                Yes, we offer both remote and on-site support depending on your needs and the nature of the issue.
+                Yes, we offer both remote and on-site support depending on your needs and the nature
+                of the issue.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">What industries do you specialize in?</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                What industries do you specialize in?
+              </h3>
               <p className="text-gray-600">
-                We work across various industries including healthcare, finance, education, retail, and manufacturing.
+                We work across various industries including healthcare, finance, education, retail,
+                and manufacturing.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">How do you ensure data security?</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                How do you ensure data security?
+              </h3>
               <p className="text-gray-600">
-                We follow industry best practices and maintain strict security protocols to protect your sensitive data and systems.
+                We follow industry best practices and maintain strict security protocols to protect
+                your sensitive data and systems.
               </p>
             </div>
           </div>

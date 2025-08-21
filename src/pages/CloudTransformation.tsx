@@ -1,16 +1,15 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const CloudTransformation: React.FC = () => {
   const navigate = useNavigate();
 
-    React.useLayoutEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  React.useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    
   return (
     <div id="top" className="font-sans min-h-screen bg-gray-50">
       <Navigation />
@@ -32,12 +31,15 @@ const CloudTransformation: React.FC = () => {
               Cloud Transformation
             </h1>
             <p className="mt-6 text-xl text-gray-100">
-              End-to-end cloud transformation — from strategy and migration to
-              modernization and optimization — helping your business scale with
-              agility, security, and cost efficiency.
+              End-to-end cloud transformation — from strategy and migration to modernization and
+              optimization — helping your business scale with agility, security, and cost
+              efficiency.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <button className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300" onClick={() => navigate("/contact")}>
+              <button
+                className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300"
+                onClick={() => navigate('/contact')}
+              >
                 Get Expert Consultation
               </button>
             </div>
@@ -53,9 +55,8 @@ const CloudTransformation: React.FC = () => {
               Comprehensive Cloud Transformation Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From cloud strategy and migration to ongoing optimization and
-              management, we ensure a seamless transition and lasting business
-              value.
+              From cloud strategy and migration to ongoing optimization and management, we ensure a
+              seamless transition and lasting business value.
             </p>
           </div>
 
@@ -68,8 +69,7 @@ const CloudTransformation: React.FC = () => {
                 Cloud Strategy & Assessment
               </h3>
               <p className="text-gray-600 mb-4">
-                Build a clear cloud roadmap aligned with your business goals and
-                IT environment.
+                Build a clear cloud roadmap aligned with your business goals and IT environment.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Cloud readiness assessments</li>
@@ -87,8 +87,8 @@ const CloudTransformation: React.FC = () => {
                 Migration & Modernization
               </h3>
               <p className="text-gray-600 mb-4">
-                Seamless migration of workloads and applications with minimal
-                downtime and maximum efficiency.
+                Seamless migration of workloads and applications with minimal downtime and maximum
+                efficiency.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Lift & shift migrations</li>
@@ -102,12 +102,9 @@ const CloudTransformation: React.FC = () => {
               <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                 <i className="fas fa-shield-alt text-blue-600 text-2xl"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Security & Governance
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Security & Governance</h3>
               <p className="text-gray-600 mb-4">
-                Secure cloud environments with strong compliance frameworks and
-                governance models.
+                Secure cloud environments with strong compliance frameworks and governance models.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Identity & access management</li>
@@ -121,12 +118,9 @@ const CloudTransformation: React.FC = () => {
               <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                 <i className="fas fa-tools text-blue-600 text-2xl"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Managed Cloud Services
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Managed Cloud Services</h3>
               <p className="text-gray-600 mb-4">
-                24/7 monitoring, management, and optimization for peak
-                performance and cost control.
+                24/7 monitoring, management, and optimization for peak performance and cost control.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Proactive monitoring</li>
@@ -140,9 +134,7 @@ const CloudTransformation: React.FC = () => {
               <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                 <i className="fas fa-cogs text-blue-600 text-2xl"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                DevOps & Automation
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">DevOps & Automation</h3>
               <p className="text-gray-600 mb-4">
                 Enable faster innovation with automated pipelines and cloud-native operations.
               </p>
@@ -158,11 +150,10 @@ const CloudTransformation: React.FC = () => {
               <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                 <i className="fas fa-chart-line text-blue-600 text-2xl"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Continuous Optimization
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Continuous Optimization</h3>
               <p className="text-gray-600 mb-4">
-                Ongoing cost, performance, and security improvements to keep your cloud future-ready.
+                Ongoing cost, performance, and security improvements to keep your cloud
+                future-ready.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Performance monitoring</li>
@@ -183,8 +174,8 @@ const CloudTransformation: React.FC = () => {
               Our Cloud Transformation Process
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A proven approach that ensures smooth migration, modernization, and
-              ongoing value from your cloud investment.
+              A proven approach that ensures smooth migration, modernization, and ongoing value from
+              your cloud investment.
             </p>
           </div>
 
@@ -193,12 +184,10 @@ const CloudTransformation: React.FC = () => {
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl font-bold">1</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Assess
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Assess</h3>
               <p className="text-gray-600">
-                Evaluate current systems, applications, and workloads to define a
-                clear transformation roadmap.
+                Evaluate current systems, applications, and workloads to define a clear
+                transformation roadmap.
               </p>
             </div>
 
@@ -206,12 +195,10 @@ const CloudTransformation: React.FC = () => {
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl font-bold">2</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Plan
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Plan</h3>
               <p className="text-gray-600">
-                Design cloud architectures, migration strategies, and security
-                frameworks aligned with your goals.
+                Design cloud architectures, migration strategies, and security frameworks aligned
+                with your goals.
               </p>
             </div>
 
@@ -219,12 +206,10 @@ const CloudTransformation: React.FC = () => {
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl font-bold">3</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Migrate
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Migrate</h3>
               <p className="text-gray-600">
-                Seamless migration and modernization with minimal downtime and
-                disruption to business operations.
+                Seamless migration and modernization with minimal downtime and disruption to
+                business operations.
               </p>
             </div>
 
@@ -232,12 +217,10 @@ const CloudTransformation: React.FC = () => {
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl font-bold">4</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Optimize
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Optimize</h3>
               <p className="text-gray-600">
-                Continuous improvement for performance, security, and cost
-                efficiency across your cloud ecosystem.
+                Continuous improvement for performance, security, and cost efficiency across your
+                cloud ecosystem.
               </p>
             </div>
           </div>
@@ -256,9 +239,8 @@ const CloudTransformation: React.FC = () => {
                 Retail Enterprise Cloud Migration & Optimization
               </h2>
               <p className="text-blue-100 mb-8">
-                We helped a leading retail company migrate its core systems to
-                the cloud, achieving 70% faster scalability, 50% cost reduction,
-                and enhanced security compliance.
+                We helped a leading retail company migrate its core systems to the cloud, achieving
+                70% faster scalability, 50% cost reduction, and enhanced security compliance.
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-8">
@@ -292,11 +274,14 @@ const CloudTransformation: React.FC = () => {
               Ready to Transform Your Business with the Cloud?
             </h2>
             <p className="text-gray-300 text-lg mb-8 max-w-3xl mx-auto">
-              Let our cloud experts help you migrate, modernize, and optimize your 
-              systems for agility, innovation, and growth.
+              Let our cloud experts help you migrate, modernize, and optimize your systems for
+              agility, innovation, and growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300 rounded-md" onClick={() => navigate("/contact")}>
+              <button
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300 rounded-md"
+                onClick={() => navigate('/contact')}
+              >
                 Schedule Consultation
               </button>
             </div>

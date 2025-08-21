@@ -1,18 +1,20 @@
 // src/App.tsx
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // Import pages
-import Home from "./Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Infrastructure from "./pages/Infrastructure";
-import F5ADC from "./pages/F5ADC";
-import CloudTransformation from "./pages/CloudTransformation";
-import StaffAugmentation from "./pages/StaffAugmentation";
-import CyberSecurity from "./pages/CyberSecurity";
-{/* We are not implementing careers page now */}
+import Home from './Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Infrastructure from './pages/Infrastructure';
+import F5ADC from './pages/F5ADC';
+import CloudTransformation from './pages/CloudTransformation';
+import StaffAugmentation from './pages/StaffAugmentation';
+import CyberSecurity from './pages/CyberSecurity';
+{
+  /* We are not implementing careers page now */
+}
 // import Careers from "./pages/Careers";
 
 const App: React.FC = () => {

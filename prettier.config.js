@@ -1,0 +1,12 @@
+const config = {
+  singleQuote: true,
+  trailingComma: 'es5',
+  tabWidth: 2,
+  semi: true,
+  printWidth: 100,
+  jsxSingleQuote: false,
+  bracketSpacing: true,
+  arrowParens: 'always',
+};
+
+export default config;

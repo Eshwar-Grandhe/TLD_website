@@ -1,16 +1,15 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const StaffAugmentation: React.FC = () => {
   const navigate = useNavigate();
 
-    React.useLayoutEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  React.useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    
   return (
     <div id="top" className="font-sans min-h-screen bg-gray-50">
       <Navigation />
@@ -32,12 +31,14 @@ const StaffAugmentation: React.FC = () => {
               Staff Augmentation
             </h1>
             <p className="mt-6 text-xl text-gray-100">
-              Flexible staffing solutions that extend your team with top IT
-              talent — when and where you need them — to deliver projects on
-              time and within budget.
+              Flexible staffing solutions that extend your team with top IT talent — when and where
+              you need them — to deliver projects on time and within budget.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <button className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300" onClick={() => navigate("/contact")}>
+              <button
+                className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300"
+                onClick={() => navigate('/contact')}
+              >
                 Learn More
               </button>
             </div>
@@ -53,8 +54,8 @@ const StaffAugmentation: React.FC = () => {
               Flexible IT Staff Augmentation Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Scale your workforce with highly skilled professionals to meet
-              project deadlines, accelerate innovation, and optimize costs.
+              Scale your workforce with highly skilled professionals to meet project deadlines,
+              accelerate innovation, and optimize costs.
             </p>
           </div>
 
@@ -65,8 +66,8 @@ const StaffAugmentation: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Dedicated Teams</h3>
               <p className="text-gray-600 mb-4">
-                Build dedicated project teams with the exact skills required for
-                your business needs.
+                Build dedicated project teams with the exact skills required for your business
+                needs.
               </p>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Full-stack developers</li>
@@ -82,8 +83,8 @@ const StaffAugmentation: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">On-Demand Talent</h3>
               <p className="text-gray-600 mb-4">
-                Quickly scale up or down based on project requirements with
-                highly skilled resources.
+                Quickly scale up or down based on project requirements with highly skilled
+                resources.
               </p>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Short-term contracts</li>
@@ -99,8 +100,8 @@ const StaffAugmentation: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Project-Based Support</h3>
               <p className="text-gray-600 mb-4">
-                Add extra hands to meet deadlines or fill critical skill gaps in
-                your ongoing projects.
+                Add extra hands to meet deadlines or fill critical skill gaps in your ongoing
+                projects.
               </p>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Agile project staffing</li>
@@ -116,15 +117,16 @@ const StaffAugmentation: React.FC = () => {
       {/* CTA */}
       <div className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            Need Extra Talent to Drive Your Projects?
-          </h2>
+          <h2 className="text-3xl font-bold mb-6">Need Extra Talent to Drive Your Projects?</h2>
           <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
-            Extend your in-house capabilities with our skilled professionals,
-            available on-demand to accelerate your success.
+            Extend your in-house capabilities with our skilled professionals, available on-demand to
+            accelerate your success.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-md text-white font-medium" onClick={() => navigate("/contact")}>
+            <button
+              className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-md text-white font-medium"
+              onClick={() => navigate('/contact')}
+            >
               Request Talent
             </button>
           </div>

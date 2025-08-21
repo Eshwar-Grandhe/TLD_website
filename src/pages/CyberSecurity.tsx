@@ -1,17 +1,15 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const CyberSecurity: React.FC = () => {
-
   const navigate = useNavigate();
-  
+
   React.useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  
   return (
     <div id="top" className="font-sans min-h-screen bg-gray-50">
       <Navigation />
@@ -33,12 +31,14 @@ const CyberSecurity: React.FC = () => {
               Cyber Security Services
             </h1>
             <p className="mt-6 text-xl text-gray-100">
-              Protect your business with end-to-end cybersecurity solutions —
-              risk assessments, compliance, monitoring, and incident response
-              to safeguard data and systems.
+              Protect your business with end-to-end cybersecurity solutions — risk assessments,
+              compliance, monitoring, and incident response to safeguard data and systems.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <button className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300" onClick={() => navigate("/contact")}>
+              <button
+                className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300"
+                onClick={() => navigate('/contact')}
+              >
                 Learn More
               </button>
             </div>
@@ -54,8 +54,8 @@ const CyberSecurity: React.FC = () => {
               Comprehensive Cyber Security Solutions
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From proactive monitoring to incident response, we deliver
-              security frameworks that keep your business safe and compliant.
+              From proactive monitoring to incident response, we deliver security frameworks that
+              keep your business safe and compliant.
             </p>
           </div>
 
@@ -66,8 +66,8 @@ const CyberSecurity: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Risk Assessment</h3>
               <p className="text-gray-600 mb-4">
-                Identify vulnerabilities in your IT landscape to reduce risks
-                and strengthen defenses.
+                Identify vulnerabilities in your IT landscape to reduce risks and strengthen
+                defenses.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Security audits</li>
@@ -83,8 +83,7 @@ const CyberSecurity: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Identity & Access</h3>
               <p className="text-gray-600 mb-4">
-                Manage user identities and secure access across systems and
-                applications.
+                Manage user identities and secure access across systems and applications.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Multi-factor authentication</li>
@@ -100,8 +99,7 @@ const CyberSecurity: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Threat Detection</h3>
               <p className="text-gray-600 mb-4">
-                Monitor and respond to cyber threats in real-time with proactive
-                detection tools.
+                Monitor and respond to cyber threats in real-time with proactive detection tools.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Security Information & Event Management (SIEM)</li>
@@ -117,8 +115,7 @@ const CyberSecurity: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Incident Response</h3>
               <p className="text-gray-600 mb-4">
-                Rapid response and recovery strategies to minimize damage and
-                downtime from attacks.
+                Rapid response and recovery strategies to minimize damage and downtime from attacks.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Digital forensics</li>
@@ -134,8 +131,7 @@ const CyberSecurity: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Compliance</h3>
               <p className="text-gray-600 mb-4">
-                Ensure regulatory compliance with industry standards and
-                frameworks.
+                Ensure regulatory compliance with industry standards and frameworks.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• GDPR & HIPAA compliance</li>
@@ -151,8 +147,7 @@ const CyberSecurity: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Network Security</h3>
               <p className="text-gray-600 mb-4">
-                Safeguard networks with firewalls, intrusion prevention, and
-                advanced monitoring.
+                Safeguard networks with firewalls, intrusion prevention, and advanced monitoring.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Next-gen firewalls</li>
@@ -170,11 +165,14 @@ const CyberSecurity: React.FC = () => {
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Secure Your Business?</h2>
           <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
-            Let our cybersecurity experts protect your business from evolving
-            threats with a proactive defense strategy.
+            Let our cybersecurity experts protect your business from evolving threats with a
+            proactive defense strategy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300 rounded-md" onClick={() => navigate("/contact")}>
+            <button
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300 rounded-md"
+              onClick={() => navigate('/contact')}
+            >
               Schedule Consultation
             </button>
           </div>

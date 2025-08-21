@@ -1,15 +1,15 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const Infrastructure: React.FC = () => {
   const navigate = useNavigate();
 
-    React.useLayoutEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
-  
+  React.useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div id="top" className="font-sans min-h-screen bg-gray-50">
       <Navigation />
@@ -31,10 +31,14 @@ const Infrastructure: React.FC = () => {
               Infrastructure Management
             </h1>
             <p className="mt-6 text-xl text-gray-100">
-              Complete on-premise and cloud infrastructure setup, refresh, and 24/7 support services to keep your business running smoothly.
+              Complete on-premise and cloud infrastructure setup, refresh, and 24/7 support services
+              to keep your business running smoothly.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <button className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300" onClick={() => navigate("/contact")}>
+              <button
+                className="!rounded-button whitespace-nowrap cursor-pointer bg-transparent hover:bg-white/10 text-white border border-white px-8 py-3 text-base font-medium transition-colors duration-300"
+                onClick={() => navigate('/contact')}
+              >
                 Learn More
               </button>
             </div>
@@ -46,9 +50,12 @@ const Infrastructure: React.FC = () => {
       <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Comprehensive Infrastructure Solutions</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              Comprehensive Infrastructure Solutions
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From design and implementation to ongoing management and support, we handle every aspect of your infrastructure needs.
+              From design and implementation to ongoing management and support, we handle every
+              aspect of your infrastructure needs.
             </p>
           </div>
 
@@ -59,7 +66,8 @@ const Infrastructure: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Infrastructure Design</h3>
               <p className="text-gray-600 mb-4">
-                Custom infrastructure solutions designed to meet your specific business requirements and growth objectives.
+                Custom infrastructure solutions designed to meet your specific business requirements
+                and growth objectives.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Network architecture planning</li>
@@ -73,9 +81,12 @@ const Infrastructure: React.FC = () => {
               <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                 <i className="fas fa-rocket text-blue-600 text-2xl"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Implementation & Migration</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Implementation & Migration
+              </h3>
               <p className="text-gray-600 mb-4">
-                Seamless deployment and migration services with minimal downtime and maximum efficiency.
+                Seamless deployment and migration services with minimal downtime and maximum
+                efficiency.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Zero-downtime migrations</li>
@@ -91,7 +102,8 @@ const Infrastructure: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Security & Compliance</h3>
               <p className="text-gray-600 mb-4">
-                Comprehensive security measures and compliance frameworks to protect your infrastructure and data.
+                Comprehensive security measures and compliance frameworks to protect your
+                infrastructure and data.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Security assessments</li>
@@ -105,9 +117,12 @@ const Infrastructure: React.FC = () => {
               <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                 <i className="fas fa-tools text-blue-600 text-2xl"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">24/7 Monitoring & Support</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                24/7 Monitoring & Support
+              </h3>
               <p className="text-gray-600 mb-4">
-                Round-the-clock monitoring, maintenance, and support to ensure optimal performance and reliability.
+                Round-the-clock monitoring, maintenance, and support to ensure optimal performance
+                and reliability.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Proactive monitoring</li>
@@ -123,7 +138,8 @@ const Infrastructure: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Cloud Infrastructure</h3>
               <p className="text-gray-600 mb-4">
-                Hybrid and multi-cloud solutions leveraging our AWS expertise for optimal performance and cost efficiency.
+                Hybrid and multi-cloud solutions leveraging our AWS expertise for optimal
+                performance and cost efficiency.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• AWS infrastructure</li>
@@ -139,7 +155,8 @@ const Infrastructure: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Performance Optimization</h3>
               <p className="text-gray-600 mb-4">
-                Continuous improvement and optimization to maximize efficiency and reduce operational costs.
+                Continuous improvement and optimization to maximize efficiency and reduce
+                operational costs.
               </p>
               <ul className="text-gray-600 text-sm space-y-2">
                 <li>• Performance analysis</li>
@@ -158,7 +175,8 @@ const Infrastructure: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Technology Stack</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We work with leading technologies and platforms to deliver robust, scalable infrastructure solutions.
+              We work with leading technologies and platforms to deliver robust, scalable
+              infrastructure solutions.
             </p>
           </div>
 
@@ -197,7 +215,8 @@ const Infrastructure: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Infrastructure Process</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A proven methodology that ensures successful infrastructure projects from start to finish.
+              A proven methodology that ensures successful infrastructure projects from start to
+              finish.
             </p>
           </div>
 
@@ -208,7 +227,8 @@ const Infrastructure: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Assessment</h3>
               <p className="text-gray-600">
-                Comprehensive analysis of your current infrastructure, requirements, and business objectives.
+                Comprehensive analysis of your current infrastructure, requirements, and business
+                objectives.
               </p>
             </div>
 
@@ -218,7 +238,8 @@ const Infrastructure: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Design</h3>
               <p className="text-gray-600">
-                Custom architecture design that aligns with your business goals and technical requirements.
+                Custom architecture design that aligns with your business goals and technical
+                requirements.
               </p>
             </div>
 
@@ -228,7 +249,8 @@ const Infrastructure: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Implementation</h3>
               <p className="text-gray-600">
-                Expert deployment and configuration with minimal disruption to your business operations.
+                Expert deployment and configuration with minimal disruption to your business
+                operations.
               </p>
             </div>
 
@@ -238,7 +260,8 @@ const Infrastructure: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Management</h3>
               <p className="text-gray-600">
-                Ongoing monitoring, maintenance, and optimization to ensure peak performance and reliability.
+                Ongoing monitoring, maintenance, and optimization to ensure peak performance and
+                reliability.
               </p>
             </div>
           </div>
@@ -257,7 +280,8 @@ const Infrastructure: React.FC = () => {
                 Manufacturing Company Infrastructure Modernization
               </h2>
               <p className="text-blue-100 mb-8">
-                We helped a leading manufacturing company modernize their legacy infrastructure, resulting in 60% improved performance and 40% cost reduction.
+                We helped a leading manufacturing company modernize their legacy infrastructure,
+                resulting in 60% improved performance and 40% cost reduction.
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-8">
@@ -287,14 +311,16 @@ const Infrastructure: React.FC = () => {
       <div className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-6">
-              Ready to Transform Your Infrastructure?
-            </h2>
+            <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Infrastructure?</h2>
             <p className="text-gray-300 text-lg mb-8 max-w-3xl mx-auto">
-              Let our team of infrastructure experts help you build a robust, scalable, and secure foundation for your business.
+              Let our team of infrastructure experts help you build a robust, scalable, and secure
+              foundation for your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300 rounded-md" onClick={() => navigate("/contact")}>
+              <button
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium transition-colors duration-300 rounded-md"
+                onClick={() => navigate('/contact')}
+              >
                 Schedule Consultation
               </button>
             </div>
