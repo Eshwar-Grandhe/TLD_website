@@ -2,7 +2,7 @@
 import React from "react";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -59,13 +59,13 @@ const Home: React.FC = () => {
                 Build robust, scalable infrastructure solutions with our expert
                 guidance and implementation.
               </p>
-              <a
-                href="/infrastructure"
+              <Link
+                to="/infrastructure"
                 className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
               >
                 Learn More
                 <i className="fas fa-arrow-right ml-2"></i>
-              </a>
+              </Link>
             </div>
 
             {/* F5 ADC */}
