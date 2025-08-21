@@ -80,13 +80,13 @@ const Home: React.FC = () => {
                 Optimize application delivery and security with F5 BIG-IP
                 solutions.
               </p>
-              <a
-                href="/f5-adc"
+              <Link
+                to="/f5-adc"
                 className="text-green-600 hover:text-green-800 font-medium inline-flex items-center"
               >
                 Learn More
                 <i className="fas fa-arrow-right ml-2"></i>
-              </a>
+              </Link>
             </div>
 
             {/* Cloud Solutions */}
@@ -101,13 +101,13 @@ const Home: React.FC = () => {
                 Leverage the power of cloud computing with our expertise in different cloud providers and
                 best practices.
               </p>
-              <a
-                href="/cloud-transformation"
+              <Link
+                to="/cloud-transformation"
                 className="text-purple-600 hover:text-purple-800 font-medium inline-flex items-center"
               >
                 Learn More
                 <i className="fas fa-arrow-right ml-2"></i>
-              </a>
+              </Link>
             </div>
 
             {/* CyberSecurity */}
@@ -121,13 +121,13 @@ const Home: React.FC = () => {
               <p className="text-gray-600 mb-6">
                 Protect your digital assets with our comprehensive cybersecurity solutions.
               </p>
-              <a
-                href="/cybersecurity"
+              <Link
+                to="/cybersecurity"
                 className="text-red-600 hover:text-red-800 font-medium inline-flex items-center"
               >
                 Learn More
                 <i className="fas fa-arrow-right ml-2"></i>
-              </a>
+              </Link>
             </div>
 
             {/* Staff Augmentation */}
@@ -141,13 +141,13 @@ const Home: React.FC = () => {
               <p className="text-gray-600 mb-6">
                 Scale your team with our skilled professionals for your projects.
               </p>
-              <a
-                href="/staff-augmentation"
+              <Link
+                to="/staff-augmentation"
                 className="text-yellow-600 hover:text-yellow-800 font-medium inline-flex items-center"
               >
                 Learn More
                 <i className="fas fa-arrow-right ml-2"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

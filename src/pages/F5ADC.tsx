@@ -5,6 +5,11 @@ import Footer from "../components/Footer";
 
 const F5ADC: React.FC = () => {
   const navigate = useNavigate();
+
+  React.useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div id="top" className="font-sans min-h-screen bg-gray-50">
       <Navigation />

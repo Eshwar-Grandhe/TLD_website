@@ -4,7 +4,14 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 const CyberSecurity: React.FC = () => {
+
   const navigate = useNavigate();
+  
+  React.useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   return (
     <div id="top" className="font-sans min-h-screen bg-gray-50">
       <Navigation />
