@@ -154,6 +154,24 @@ const Home: React.FC = () => {
                 <i className="fas fa-arrow-right ml-2"></i>
               </Link>
             </div>
+
+            {/* AI Services */}
+            <div className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
+              <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                <i className="fas fa-brain text-2xl text-purple-600"></i>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">AI Services</h3>
+              <p className="text-gray-600 mb-6">
+                Leverage the power of AI to drive innovation and efficiency in your business.
+              </p>
+              <Link
+                to="/ai-services"
+                className="text-purple-600 hover:text-purple-800 font-medium inline-flex items-center"
+              >
+                Learn More
+                <i className="fas fa-arrow-right ml-2"></i>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

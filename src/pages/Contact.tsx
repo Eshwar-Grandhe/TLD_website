@@ -84,9 +84,7 @@ const Contact: React.FC = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="py-20 md:py-28 lg:py-32 max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-              Get in Touch
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">Contact Us</h1>
             <p className="mt-6 text-xl text-gray-100">
               Ready to transform your IT infrastructure? Let's discuss how we can help you achieve
               your technology goals.

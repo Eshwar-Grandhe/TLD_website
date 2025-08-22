@@ -82,6 +82,14 @@ const Footer: React.FC = () => {
                   Staff Augmentation
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/ai-services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  AI Services
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -101,7 +109,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li className="text-gray-300">
                 <i className="fas fa-envelope mr-2"></i>
-                dkesav@tldsys.com
+                <a href="mailto:dkesav@tldsys.com">dkesav@tldsys.com</a>
               </li>
               <li className="text-gray-300">
                 <i className="fas fa-phone mr-2"></i>
