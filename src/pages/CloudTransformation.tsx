@@ -18,7 +18,7 @@ const CloudTransformation: React.FC = () => {
       <div className="pt-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://readdy.ai/api/search-image?query=Digital%20cloud%20technology%20concept%2C%20modern%20enterprise%20cloud%20platform%20with%20secure%20data%20migration%2C%20cloud%20computing%20infrastructure%20with%20blue%20lighting&width=1440&height=600&seq=cloud-hero&orientation=landscape"
+            src="/Hero.jpg"
             alt="Cloud Transformation Hero"
             className="w-full h-full object-cover object-center"
           />
@@ -228,7 +228,7 @@ const CloudTransformation: React.FC = () => {
       </div>
 
       {/* Case Study */}
-      <div className="py-20 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
+      {/* <div className="py-20 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -264,7 +264,7 @@ const CloudTransformation: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* CTA Section */}
       <div className="py-20 bg-gray-900 text-white">

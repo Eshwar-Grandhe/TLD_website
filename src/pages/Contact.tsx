@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
       <div className="pt-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://readdy.ai/api/search-image?query=Modern%20customer%20service%20center%20with%20professional%20team%20members%20on%20phones%20and%20computers%2C%20contact%20support%20environment%2C%20business%20communication%20hub%20with%20blue%20and%20gray%20color%20scheme&width=1440&height=600&seq=contact-hero&orientation=landscape"
+            src="/Hero.jpg"
             alt="Contact Us Hero"
             className="w-full h-full object-cover object-center"
           />

@@ -80,7 +80,7 @@ const Careers: React.FC = () => {
       <div className="pt-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://readdy.ai/api/search-image?query=Diverse%20team%20of%20professionals%20collaborating%20in%20modern%20office%20space%2C%20career%20growth%20and%20teamwork%20concept%2C%20professional%20workplace%20with%20technology%20equipment%2C%20business%20collaboration%20scene%20with%20blue%20and%20gray%20color%20scheme&width=1440&height=600&seq=careers-hero&orientation=landscape"
+            src="/Hero.jpg"
             alt="Careers Hero"
             className="w-full h-full object-cover object-center"
           />

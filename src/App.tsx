@@ -12,6 +12,7 @@ import F5ADC from './pages/F5ADC';
 import CloudTransformation from './pages/CloudTransformation';
 import StaffAugmentation from './pages/StaffAugmentation';
 import CyberSecurity from './pages/CyberSecurity';
+import SoftwareDevelopment from './pages/SoftwareDevelopment';
 {
   /* We are not implementing careers page now */
 }
@@ -32,6 +33,7 @@ const App: React.FC = () => {
           <Route path="/staff-augmentation" element={<StaffAugmentation />} />
           <Route path="/infrastructure" element={<Infrastructure />} />
           <Route path="/f5-adc" element={<F5ADC />} />
+          <Route path="/software-development" element={<SoftwareDevelopment />} />
         </Routes>
       </div>
     </Router>

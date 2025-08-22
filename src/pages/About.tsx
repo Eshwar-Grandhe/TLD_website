@@ -15,7 +15,7 @@ const About: React.FC = () => {
       <div className="pt-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://readdy.ai/api/search-image?query=Professional%20team%20meeting%20in%20modern%20office%20with%20diverse%20group%20of%20IT%20professionals%20discussing%20technology%20solutions%2C%20collaborative%20workplace%20environment%2C%20business%20consultation%20scene%20with%20blue%20and%20gray%20color%20scheme&width=1440&height=600&seq=about-hero&orientation=landscape"
+            src="/Hero.jpg"
             alt="About Us Hero"
             className="w-full h-full object-cover object-center"
           />
@@ -56,6 +56,13 @@ const About: React.FC = () => {
                 why we focus on delivering practical, scalable solutions that drive real business
                 value.
               </p>
+            </div>
+            <div>
+              <img
+                src="/OurStory.png"
+                alt="Our Story"
+                className="rounded-lg shadow-xl w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>

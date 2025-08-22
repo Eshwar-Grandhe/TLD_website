@@ -60,6 +60,14 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
+                  to="/software-development"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Software Development
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/cybersecurity"
                   className="text-gray-300 hover:text-white transition-colors"
                 >

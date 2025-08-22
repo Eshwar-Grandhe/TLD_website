@@ -18,7 +18,7 @@ const Infrastructure: React.FC = () => {
       <div className="pt-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://readdy.ai/api/search-image?query=Modern%20data%20center%20with%20rows%20of%20servers%20and%20networking%20equipment%2C%20infrastructure%20management%20concept%2C%20enterprise%20IT%20infrastructure%20with%20blue%20lighting%2C%20professional%20technology%20environment&width=1440&height=600&seq=infrastructure-hero&orientation=landscape"
+            src="/Hero.jpg"
             alt="Infrastructure Management Hero"
             className="w-full h-full object-cover object-center"
           />
@@ -269,7 +269,7 @@ const Infrastructure: React.FC = () => {
       </div>
 
       {/* Case Study */}
-      <div className="py-20 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
+      {/* <div className="py-20 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -305,7 +305,7 @@ const Infrastructure: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* CTA Section */}
       <div className="py-20 bg-gray-900 text-white">

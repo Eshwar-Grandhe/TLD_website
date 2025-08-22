@@ -18,7 +18,7 @@ const F5ADC: React.FC = () => {
       <div className="pt-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://readdy.ai/api/search-image?query=F5%20BIG-IP%20Application%20Delivery%20Controller%20equipment%20in%20data%20center%2C%20network%20load%20balancing%20technology%2C%20enterprise%20application%20delivery%20infrastructure%2C%20blue%20and%20gray%20technology%20environment&width=1440&height=600&seq=f5-hero&orientation=landscape"
+            src="/Hero.jpg"
             alt="F5 ADC Hero"
             className="w-full h-full object-cover object-center"
           />
@@ -280,7 +280,7 @@ const F5ADC: React.FC = () => {
       </div>
 
       {/* Case Study */}
-      <div className="py-20 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
+      {/* <div className="py-20 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -314,7 +314,7 @@ const F5ADC: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Certifications */}
       <div className="py-20 bg-white">

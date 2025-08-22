@@ -27,8 +27,8 @@ const Home: React.FC = () => {
               People, Process & Technology
             </h1>
             <p className="mt-6 text-xl text-gray-100">
-              Expert IT solutions from a team of ex-AWS professionals dedicated to solving your
-              real-world business challenges.
+              Expert IT solutions from a team of professionals dedicated to solving your real-world
+              business challenges.
             </p>
           </div>
         </div>
@@ -82,7 +82,7 @@ const Home: React.FC = () => {
               </Link>
             </div>
 
-            {/* Cloud Solutions */}
+            {/* Cloud Transformation */}
             <div className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
                 <i className="fas fa-cloud text-2xl text-purple-600"></i>
@@ -95,6 +95,24 @@ const Home: React.FC = () => {
               <Link
                 to="/cloud-transformation"
                 className="text-purple-600 hover:text-purple-800 font-medium inline-flex items-center"
+              >
+                Learn More
+                <i className="fas fa-arrow-right ml-2"></i>
+              </Link>
+            </div>
+
+            {/* Software Development */}
+            <div className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
+              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <i className="fas fa-code text-2xl text-blue-600"></i>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Software Development</h3>
+              <p className="text-gray-600 mb-6">
+                Build and maintain high-quality software solutions tailored to your business needs.
+              </p>
+              <Link
+                to="/software-development"
+                className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
               >
                 Learn More
                 <i className="fas fa-arrow-right ml-2"></i>
@@ -191,7 +209,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Case Study Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -225,7 +243,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gray-900">

@@ -18,7 +18,7 @@ const StaffAugmentation: React.FC = () => {
       <div className="pt-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://readdy.ai/api/search-image?query=Professional%20IT%20team%20working%20in%20modern%20office%2C%20collaborative%20technology%20workspace%20with%20digital%20screens&width=1440&height=600&seq=staff-hero&orientation=landscape"
+            src="/Hero.jpg"
             alt="Staff Augmentation Hero"
             className="w-full h-full object-cover object-center"
           />
